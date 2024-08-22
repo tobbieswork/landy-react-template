@@ -11,6 +11,7 @@ const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+const ChatBox = lazy(() => import("../../components/ChatBox"));
 
 const Home = () => {
   return (
@@ -52,6 +53,7 @@ const Home = () => {
         icon="product-launch.svg"
         id="mission"
       />
+      <ChatBox />
       <ContentBlock
         direction="left"
         title={ProductContent.title}
